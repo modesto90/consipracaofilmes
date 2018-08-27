@@ -1,0 +1,6 @@
+Bom, tive alguns contra tempos durante o final de semana. Acabou que n deu para olhar a grid com dev express,
+ porém eu fiz tudo descrito de acordo com meu entendimento pretendia fazer alguns tratamentos em front e back que n deram
+muito tempo de fazer, mas de resto tudo que foi descrito acredito ter atendido. Obrigado!
+
+OBS: NUNCA TINHA USAODO O NHIBERNATE ENTÃO ACREDITO QUE POSSA TER FORMA MELHOR ASSIM COMO MUITAS COISAS. Mas, acredito que como
+uma prova para avaliar ajuda.
