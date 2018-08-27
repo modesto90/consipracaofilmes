@@ -1,0 +1,38 @@
+﻿
+@model  ConspiracaoFilmes.Application.Models.ClienteModel
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        @using (Html.BeginForm("Create", "Cliente", FormMethod.Post, new { id = "formPostCliente" }))
+        {
+            <div class="modal-header">
+                <div class="modal-title">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3><i class="fa fa-save"></i> Adicionar cliente</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        @Html.TextBoxFor(x => x.cpfCnpj, new { @class = "form-control", placeholder = "Digite o CPF/CNPJ", required = "required", maxlength = "200" })
+                    </div>
+                    <div class="col-6">
+                        @Html.TextBoxFor(x => x.nome, new { @class = "form-control", placeholder = "Digite o nome", required = "required" })
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary text-right" type="submit">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/telas/cliente/create.js")"></script>

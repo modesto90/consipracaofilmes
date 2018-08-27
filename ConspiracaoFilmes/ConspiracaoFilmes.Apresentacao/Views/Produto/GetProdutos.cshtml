@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ConspiracaoFilmes.Application.Models.GridModel>
+
+@{
+    ViewBag.Title = "GetProdutos";
+}
+
+<h2>GetProdutos</h2>
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.nomeCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomeProduto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.peso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomeCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomeProduto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.peso)
+        </td>
+        <td>
+            <button class="btn btn-info" onclick="editProduto(@item.idProduto)">Editar</button>
+        </td>
+    </tr>
+}
+
+</table>

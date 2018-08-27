@@ -1,0 +1,60 @@
+﻿
+@model  ConspiracaoFilmes.Application.Models.ProdutoModel
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        @using (Html.BeginForm("Edit", "Produto", FormMethod.Post, new { id = "formEditProduto" }))
+        {
+            @Html.HiddenFor(x => x.id)
+            <div class="modal-header">
+                <div class="modal-title">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3><i class="fa fa-save"></i> Editar produto</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <select class="form-control" id="tipoPeso">
+                            @foreach (var item in (ConspiracaoFilmes.Domain.Commons.Enums.TipoPeso[])Enum.GetValues(typeof(ConspiracaoFilmes.Domain.Commons.Enums.TipoPeso)))
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-3">
+                        @Html.LabelFor(x => x.nome)
+                        @Html.TextBoxFor(x => x.nome, new { @class = "form-control", placeholder = "Nome do produto", required = "required" })
+                    </div>
+                    <div class="col-3">
+                        @Html.LabelFor(x => x.quantidade)
+                        @Html.TextBoxFor(x => x.quantidade, new { @class = "form-control", placeholder = "Quantidade", type = "number", required = "required" })
+                    </div>
+                    <div class="col-3">
+                        @Html.LabelFor(x => x.peso)
+                        @Html.TextBoxFor(x => x.peso, new { @class = "form-control", placeholder = "Peso", type = "text", disabled = "disabled" })
+                    </div>
+                    <div class="col-3">
+                        @Html.LabelFor(x => x.valor)
+                        @Html.TextBoxFor(x => x.valor, new { @class = "form-control", placeholder = "Peso", type = "text" })
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary text-right" type="submit">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/telas/produto/edit.js")"></script>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+<script src="@Url.Content("~/Scripts/Jquery.js")"></script>
+
+<script src="@Url.Content("~/Scripts/telas/cliente/index.js")"></script>
+
+
+<div class="row">
+    <div class="col-12">
+        <button onclick="createCliente()" class="btn btn-primary">Adicionar Cliente</button>
+        <button onclick="createProduto()" class="btn btn-primary">Adicionar Produto</button>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-12" id="grid">
+
+    </div>
+</div>

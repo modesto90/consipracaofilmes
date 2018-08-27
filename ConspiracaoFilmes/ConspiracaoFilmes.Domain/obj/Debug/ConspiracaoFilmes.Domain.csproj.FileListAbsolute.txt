@@ -1,0 +1,6 @@
+c:\users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\bin\Debug\ConspiracaoFilmes.Domain.dll
+c:\users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\bin\Debug\ConspiracaoFilmes.Domain.pdb
+c:\users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\obj\Debug\ConspiracaoFilmes.Domain.csproj.CoreCompileInputs.cache
+c:\users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\obj\Debug\ConspiracaoFilmes.Domain.dll
+c:\users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\obj\Debug\ConspiracaoFilmes.Domain.pdb
+C:\Users\modes\source\repos\ConspiracaoFilmes\ConspiracaoFilmes.Domain\obj\Debug\ConspiracaoFilmes.Domain.csprojResolveAssemblyReference.cache

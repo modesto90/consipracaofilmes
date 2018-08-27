@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ConspiracaoFilmes.Application.Models.ClienteModel>
+
+@{
+    ViewBag.Title = "GetClientes";
+}
+
+<h2>Lista de Clientes</h2>
+
+<br />
+<div class="row">
+    <div class="col-12">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.cpfCnpj)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dataCadastro)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.cpfCnpj)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dataCadastro)
+                    </td>
+                    <td>
+                        <button onclick="editCliente(@item.id)" class="btn btn-primary">Editar</button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
